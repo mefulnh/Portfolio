@@ -1,0 +1,112 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #2f3031;
+    color: #efff09;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+#hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #0c0c0c;
+}
+
+/* Gradient Text Animation */
+.gradient-text {
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(161,161,161,1) 49%, rgba(4,4,4,1) 100%);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 3s infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+/* Social Icons */
+.social-icon {
+    font-size: 2.5rem;
+    color: #33bb27;
+    margin: 0 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #37eda1;
+    transform: scale(1.2);
+}
+
+/* Bagian Kontak */
+#contact {
+    background-color: #1a1a1a;
+    color: #fff;
+    border-radius: 10px;
+    padding: 50px 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#contact h3 {
+    font-size: 2.5rem;
+    color: #33bb27;
+}
+
+#contact p {
+    font-size: 1.1rem;
+}
+
+#contact .form-label {
+    font-weight: bold;
+    color: #ddd;
+}
+
+#contact .form-control {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+#contact .form-control:focus {
+    background-color: #292929;
+    color: #fff;
+    border-color: #33bb27;
+    box-shadow: 0 0 5px rgba(51, 187, 39, 0.5);
+}
+
+#contact .btn-success {
+    background-color: #33bb27;
+    border-color: #33bb27;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contact .btn-success:hover {
+    background-color: #28a745;
+    transform: translateY(-3px);
+}
+
+#contact a {
+    color: #33bb27;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#contact a:hover {
+    color: #37eda1;
+    transform: scale(1.2);
+}
+
